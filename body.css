@@ -174,8 +174,9 @@ body {
   width: 100%;
   max-width: 560px;
   border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 5px 20px rgba(35, 124, 220, 0.4);
   transition: transform 0.4s ease;
+  background: hsl(220, 72%, 89%);
 }
 
 .about-image img:hover {
@@ -195,7 +196,7 @@ body {
   background: #1e293b;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(48, 165, 223, 0.3);
   opacity: 0;
   transform: translateY(40px);
   transition: all 1s ease;
