@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KavariShield Protection</title>
+  <link rel="icon" href="iconkavari.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="body.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="iconkavari.png" alt="Kavari Logo" />
+        <span class="logo-text">KavariShield</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container about-container">
+      <div class="about-text animate">
+        <h2><span class="highlight">Tentang</span> Kavari</h2>
+        <p style="text-align: justify;">  Kami adalah tim ahli keamanan siber berpengalaman yang berdedikasi untuk melindungi bisnis dari ancaman digital yang terus berkembang.
+        Dengan teknologi terdepan dan metodologi yang terbukti, kami memberikan solusi keamanan komprehensif.</p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check-circle"></i> Certified Security Professionals</li>
+          <li><i class="fa-solid fa-check-circle"></i> Advanced Threat Detection</li>
+          <li><i class="fa-solid fa-check-circle"></i> 24/7 Security Operations</li>
+        </ul>
+      </div>
+      <div class="about-image animate">
+        <img src="photo-1573166364710-411396f726c5.jpeg" alt="Kavari Dashboard" />
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card animate"><i class="fa-solid fa-user-shield"></i><h3>500+</h3><p>Clients Protected</p></div>
+        <div class="stat-card animate"><i class="fa-solid fa-briefcase"></i><h3>15+</h3><p>Years Experience</p></div>
+        <div class="stat-card animate"><i class="fa-solid fa-clock"></i><h3>24/7</h3><p>Monitoring</p></div>
+        <div class="stat-card animate"><i class="fa-solid fa-globe"></i><h3>50+</h3><p>Countries Served</p></div>
+      </div>
+    </div>
+
+    <div class="container about-container">
+      <div class="about-image animate">
+        <img src="kavarikreasinusantara.png" alt="Kavari Dashboard" />
+      </div>
+      <div class="about-text animate">
+        <h2><span class="highlight">PT Kavari Kreasi </span><span>Nusantara</span></h2>
+        <p style="text-align: justify;">Kavari Shield adalah layanan dari PT Kavari Kreasi Nusantara yang menghadirkan solusi keamanan digital dan teknologi inovatif. Kami melindungi aset dan data bisnis Anda dengan standar internasional, menjadikan keamanan sebagai fondasi inovasi dan pertumbuhan, serta menghadirkan solusi yang disesuaikan untuk setiap kebutuhan.</p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check-circle"></i> 100+ Klien puas</li>
+          <li><i class="fa-solid fa-check-circle"></i> 8+ Tahun pengalaman</li>
+          <li><i class="fa-solid fa-check-circle"></i> 22+ Proyek sukses</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-about">
+        <h3>KavariShield</h3>
+        <p>Konsultan keamanan siber terpercaya...</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Email: info@kavari.com</p>
+        <p>Phone: +62 822 6829 8785</p>
+        <p>Address: Jl. AMD No.66, Tangerang Selatan</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KavariShield. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle menu
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      document.getElementById("siteNav").classList.toggle("active");
+    });
+
+    // Scroll animation
+    const elements = document.querySelectorAll(".animate, .about-text, .about-image, .stat-card");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+
+
+    const menuToggle = document.getElementById("menuToggle");
+    const siteNav = document.getElementById("siteNav");
+
+    menuToggle.addEventListener("click", () => {
+      siteNav.classList.toggle("active");
+    });
+
+  </script>
+   <script>
+
+  </script>
+</body>
+</html>
