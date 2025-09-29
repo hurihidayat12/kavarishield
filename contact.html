@@ -6,7 +6,8 @@
   <title>KavariShield Protection</title>
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="ceoconstyle.css">
+  <!-- <link rel="stylesheet" href="ceoconstyle.css"> -->
+  
   <style>
     * {
       margin: 0;
@@ -187,6 +188,7 @@
       padding: 30px;
       border-radius: 15px;
       border: 1px solid #222;
+      
     }
 
     .form-group {
@@ -199,6 +201,34 @@
       display: block;
       color: #aaa;
     }
+
+    .contact-card-ceo {
+      text-align: center;
+      align-items: center;
+      margin-top: 70px;
+    }
+    
+.ceo-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: linear-gradient(90deg, #3e97af, #7928ca, #00eaff);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 40px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ceo-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(121, 40, 202, 0.6);
+}
+
+
 
     .form-group input,
     .form-group textarea {
@@ -394,42 +424,9 @@
   </div>
 
   <!-- HERO HEADER -->
-  <header class="hero">
-    <div class="container">
-      <h1>Hubungi <span>Kavari</span></h1>
-      <p>Kami siap mendukung Anda kapan pun. Demi keamanan data, pelanggan terdaftar disarankan menggunakan <strong>Kavari Support Desk</strong> sebagai saluran utama.</p>
-    </div>
-  </header>
-
-  <!-- CONTACT INFO -->
-  <section class="contact-section">
-    <div class="container contact-grid">
-
-      <!-- Card 1 -->
-      <div class="contact-card red fade-in">
-        <h2>📞 Pertanyaan Umum</h2>
-        <p>Tim Customer Support Kavari siap membantu Anda 24/7.</p>
-        <ul>
-          <li><strong>Email:</strong> <a href="mailto:help@kavari.co.id">help@kavari.co.id</a></li>
-          <li><strong>LiveChat:</strong> Tersedia 24/7 untuk panduan & bantuan teknis.</li>
-        </ul>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="contact-card purple fade-in" style="animation-delay: .2s;">
-        <h2>🏢 Alamat & Kantor</h2>
-        <p>
-          PT. Kavari Kreasi Nusantara<br>
-          Jl. Jendral Sudirman Kav. 52-53<br>
-          SCBD – Jakarta Selatan - 12190<br>
-          📞 <strong>Telp:</strong> 021 4020 0828
-        </p>
-        <p><em>Layanan telepon tersedia Senin–Jumat pukul 09.00–17.00 WIB.<br>Untuk transaksi, hubungi LiveChat atau email kami.</em></p>
-      </div>
-
-      <!-- Card 3 -->
+  <!-- rd 3 -->
 <!-- Card 3 FIXED ✅ -->
-<div class="contact-card gradient fade-in" style="animation-delay: .4s;">
+<div class="contact-card-ceo gradient fade-in" style="animation-delay: .4s;">
   <h2>👤 Hubungi CEO Kami</h2>
   <p>Punya ide atau saran strategis? Hubungi CEO kami langsung:</p>
   <a href="mailto:huri@kavari.co.id" class="ceo-button">✉️ Email CEO Langsung</a>
